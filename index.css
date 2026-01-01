@@ -1,0 +1,61 @@
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+    }
+    .bg-animation {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      z-index: -1;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .login-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .login-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+    }
+    .login-card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .login-card .form-control {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+    }
+    .login-card .btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #fff;
+    }
